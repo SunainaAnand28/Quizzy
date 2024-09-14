@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ededeec2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #2d2929; /* Ensure the text color is set for readability */
+}
+
+.register-container {
+    background-color: #f2f5f9;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #2d2929; /* Ensure text color inside the container is readable */
+}
+
+h2 {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.formgroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formgroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d2929; /* Ensure label text is readable */
+}
+
+.formgroup input[type="text"],
+.formgroup input[type="email"], 
+.formgroup input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Ensure input text is readable */
+    color: #2d2929; /* Set input text color */
+}
+
+.submitButton {
+    width: 150px;
+    padding: 10px;
+    background-color: #F66B1D;
+    border: 1px solid rgb(255, 106, 0);
+    color: #2d2929;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.submitButton:hover {
+    background-color: #e35c0d;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust heading font size for smaller screens */
+    }
+
+    .submitButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .formgroup input[type="text"],
+    .formgroup input[type="email"], 
+    .formgroup input[type="password"] {
+        font-size: 14px; 
+    }
+}

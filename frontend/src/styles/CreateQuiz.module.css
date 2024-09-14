@@ -1,0 +1,106 @@
+.createQuizForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 80vh;
+  width: 80vw;
+  overflow-y: auto;
+  background-color: #f2f5f9;
+}
+
+.createQuizForm h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.quizForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.quizForm label {
+  font-weight: bold;
+  min-width: 120px;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.quizForm input[type="text"],
+.quizForm input[type="number"],
+.quizForm select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  flex: 1;
+  color: #555;
+}
+
+.quizForm input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #F66B1D;
+}
+
+.questionSection {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+.quizForm button {
+  background-color: #F66B1D;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.quizForm button:hover {
+  background-color: #f8610a;
+}
+
+.quizForm button:disabled {
+  background-color: #F66B1D;
+  cursor: not-allowed;
+}
+
+.questionSection button {
+  background-color: #F66B1D;
+}
+.removeOptionButton{
+  background-color: #F66B1D;
+}
+.removeOptionButton{
+  background-color: #F66B1D;
+}
+
+.questionSection button:hover {
+  background-color: #fd660f;
+}
+
+.errorMessage {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.correctAnswerInput {
+  margin-bottom: 1rem;
+ 
+}

@@ -1,0 +1,114 @@
+/* Dashboard Container */
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust to compensate for the fixed navbar height */
+  overflow-y: auto; /* Add vertical scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Custom Scrollbar Styling */
+.dashboard-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-page::-webkit-scrollbar-thumb {
+  background-color: #888; /* Custom scrollbar color */
+  border-radius: 10px;
+}
+
+.dashboard-page::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #2b52a6;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+.dashboard-text{
+  color: #2b52a6;
+}
+
+/* Main Container for Dashboard Items */
+.dashboard-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dashboard Navigation for Horizontal Layout */
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual Dashboard Item */
+.dashboard-item {
+  background-color: #ffffff;
+  flex: 1;
+  min-width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Item Hover Effect */
+.dashboard-item:hover {
+  transform: scale(1.05);
+}
+
+/* Title inside each Dashboard Item */
+.dashboard-item h3 {
+  font-size: 1.5rem;
+  color: #1257aa;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.dashboard-button {
+  background-color: #F66B1D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.dashboard-button:hover {
+  background-color: #fa6006;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

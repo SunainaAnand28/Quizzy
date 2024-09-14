@@ -1,0 +1,105 @@
+/* Parent Container */
+.home {
+  display: flex;
+  justify-content: space-between; /* Space out the two main sections */
+  align-items: center; /* Align items vertically in the center */
+  background-color: #f2f5f9;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url('D:\Quizzy and Portfolio\Quiz-App-REST-API-TS-Mongoose\frontend\src\assets\Quizzy.png');
+  border-radius: 15px;
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Text and Buttons Container */
+.buttonContainer {
+  flex: 0.6; /* Takes up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Heading Styling */
+.intro-heading {
+  font-size: 2rem;
+  color: #096eb1;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.intro-text {
+  font-size: 1.5rem;
+  color: #096eb1;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.homeButton {
+  width: 200px;
+  padding: 15px;
+  font-size: 16px;
+  margin: 10px auto; /* Center the buttons */
+  border-radius: 8px;
+  border: 2px solid #b9b5b5;
+  background-color: #F66B1D;
+  color: #2d2929;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.homeButton:hover {
+  background-color: #fb6108; /* Blue background on hover */
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .home{
+    flex-direction: column;
+    height: 80vh;
+  }
+  .buttonContainer {
+    width: 100%; /* Full width for the text and buttons */
+    padding: 10px;
+  }
+
+ .intro-heading {
+    font-size: 1.5rem;
+    margin-top: 70px;
+  }
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .homeButton {
+    width: 40%; /* Full-width buttons on smaller screens */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .home{
+    height: 80vh;
+  }
+  .intro-heading {
+    font-size: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 30px; /* Further reduce margin on extra small screens */
+  }
+
+  .homeButton {
+    width: 70%; /* Full-width buttons */
+    padding: 10px;
+  }
+}

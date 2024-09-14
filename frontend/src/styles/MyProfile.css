@@ -1,0 +1,138 @@
+/* Prevent scrolling on the entire page */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent page scroll */
+}
+
+/* Container styling */
+.profile-container {
+  max-width: 900px;
+  height: 100vh;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f2f5f9; /* Matches the background of other components */
+  overflow-y: auto; /* Added scroll within this container */
+}
+
+/* Header styling */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* User info styling */
+.user-info {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 200px; /* Restricted height */
+  overflow-y: auto; /* Added internal scroll if content exceeds height */
+}
+
+/* Form styling */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-form label {
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+.profile-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  width: 100%; /* Set all input fields to take full width */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  max-width: 500px; /* You can control the max width of the input boxes */
+}
+
+/* Button styling */
+.profile-form button {
+  padding: 10px;
+  border: 1px solid #cfcccb; /* Button border color */
+  border-radius: 30px;
+  background-color: #cfcccb; /* Button background color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile-form button:hover {
+  background-color: #cfcccb; /* Hover state matches other buttons */
+}
+
+/* Error and success messages */
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+/* Deactivation button section styling */
+.deactivation-section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 150px; /* Restrict height */
+  overflow-y: auto; /* Add internal scroll if content exceeds height */
+}
+
+.deactivation-button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #cfcccb; /* Match primary button color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deactivation-button:hover {
+  background-color: #cfcccb; /* Hover color */
+}
+
+/* Logout button section styling */
+.logout-section {
+  margin-top: 40px; /* Added margin to separate from deactivation section */
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 150px; /* Restricted height */
+  overflow-y: auto; /* Added internal scroll if content exceeds height */
+}
+
+.logout-button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #cfcccb; /* Match primary button color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #cfcccb; /* Hover color */
+}

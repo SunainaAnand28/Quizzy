@@ -1,0 +1,62 @@
+/* Main container for the report details */
+.report-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .report-detail-container > div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for report details inside the card */
+  .report-detail-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .report-detail-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .report-detail-container p strong {
+    color: #333;
+  }
+  
+  /* Button styling */
+  .report-detail-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .report-detail-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .report-detail-container > div {
+      width: 90%; /* Make the card more responsive on smaller screens */
+    }
+  }
+  

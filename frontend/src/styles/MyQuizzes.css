@@ -1,0 +1,115 @@
+.my-quiz {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox container for horizontal layout */
+.my-quiz-table {
+    display: flex;
+    flex-wrap: wrap; /* Wraps quizzes onto the next line if they overflow */
+    justify-content: center; /* Centers the quiz cards */
+    gap: 20px;
+    overflow-y: auto; /* Enables vertical scrolling if there are too many quizzes */
+    max-height: 80vh; /* Limits the container height to prevent excessive scrolling */
+}
+
+/* Styles for each quiz box */
+.quiz-card {
+    width: 250px; /* Increased the width for more space */
+    height: 250px; /* Increased the height for better button fitting */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevents any overflow from content */
+}
+
+.quiz-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quiz-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button-group button {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensures buttons take full width of the quiz card */
+    max-width: 90%; /* Limits button width for spacing */
+    margin: 0 auto; /* Centers the buttons */
+}
+
+/* Specific button styles */
+.editbutton {
+    background-color: #4caf50;
+    color: white;
+}
+
+.deletebutton {
+    background-color: #f44336;
+    color: white;
+}
+
+.publishbutton {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Disable button style for published quizzes */
+.published {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    .my-quiz-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .button-group {
+        gap: 8px;
+    }
+
+    .button-group button {
+        width: 100%; /* Full-width buttons on smaller screens */
+    }
+}

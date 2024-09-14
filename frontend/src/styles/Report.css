@@ -1,0 +1,102 @@
+/* Styling for the report page */
+.report-page {
+    background-color: #f7f9fc;
+    /* Antique white background for the page */
+    padding: 20px;
+    min-width: 70vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title styling */
+.report-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+/* Scrollable container for the report cards */
+.report-container {
+    width: 80%;
+    max-width: 1200px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for each report card */
+.report-card {
+    background-color: white;
+    /* White background for report cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on report cards */
+.report-card:hover {
+    transform: scale(1.01);
+}
+
+/* Text styling inside report cards */
+.report-card p {
+    font-size: 1rem;
+    color: #333;
+    /* Dark color for text */
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Loading message styling */
+.loading {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #5a5a5a;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .report-card {
+        width: calc(100% - 20px);
+        /* Full width on smaller screens */
+        max-width: none;
+    }
+
+    .report-title {
+        font-size: 1.8rem;
+    }
+
+    .report-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .report-title {
+        font-size: 1.5rem;
+    }
+
+    .report-card {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    .report-card p {
+        font-size: 0.8rem;
+    }
+}

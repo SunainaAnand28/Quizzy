@@ -1,0 +1,64 @@
+.Login-container {
+    text-align: center; 
+    background-color: #f2f5f9;
+    width: 60vw;
+    max-width: 600px; 
+    padding: 20px; /* Added padding for spacing inside the container */
+    box-sizing: border-box; 
+    border-radius: 20px; 
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(63, 21, 65);
+    margin-bottom: 20px;
+}
+
+.formgroup {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+.formgroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formgroup input[type="email"],
+.formgroup input[type="password"] {
+    width: 100%; /* Set input width to 100% of the container */
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Added border for better appearance */
+}
+
+.LoginButton {
+    width: 150px; /* Set button width */
+    padding: 10px;
+    font-size: 14px; 
+    margin-top: 10px; /* Add margin-top to create vertical space */
+    border-radius: 20px; /* Adjust border-radius for proportionate rounding */
+    border: 2px solid #ddd3d3; /* Add border for appearance */
+    background-color: #F66B1D; /* Set button background color */
+    color: #2d2929; /* Set button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.Loginbutton:hover {
+    background-color: #f85d03;
+}
+
+.error-message {
+    color: red; /* Style error message */
+    margin-top: 10px; 
+}
+/* Extra small screens */
+@media (max-width: 480px) {
+    .Login-container{
+        width: 90vw;
+    }
+}
